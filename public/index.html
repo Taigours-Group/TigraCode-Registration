@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TigraCode - Future of Education Registration</title>
+    <link rel="icon" href="assets/TigraCode.png" type="image/x-icon">
+    <meta name="description" content="Join the future of education with TigraCode. Register now for admissions">
+
+    <!-- Open Graph tags -->
+    <meta property="og:title" content="TigraCode - Future of Education Registration">
+    <meta property="og:description" content="Experience next-generation education with our futuristic student registration platform.">
+    <meta property="og:type" content="website">
+    <link rel="x-icon" href="TigraCode.png" type="image/x-icon">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <img src="assets/TigraCode2.png" alt="" width="60" height="60">
+                <span class="gradient-text">TigraCode</span>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#register" class="nav-link">Register</a>
+                <a href="#about" class="nav-link">About</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background"></div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="gradient-text">The Future</span><br>
+                    of Education
+                </h1>
+                <p class="hero-subtitle">
+                    Experience next-generation learning with cutting-edge technology 
+                    and innovative programs designed for tomorrow's leaders.
+                </p>
+                <button class="cta-button" onclick="document.getElementById('register').scrollIntoView({ behavior: 'smooth' })">
+                    <span>Start Your Journey</span>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-card">
+                    <div class="card-content">
+                        <i class="fas fa-rocket"></i>
+                        <span>Innovation</span>
+                    </div>
+                </div>
+                <div class="floating-card delay-1">
+                    <div class="card-content">
+                        <i class="fas fa-brain"></i>
+                        <span>Intelligence</span>
+                    </div>
+                </div>
+                <div class="floating-card delay-2">
+                    <div class="card-content">
+                        <i class="fas fa-atom"></i>
+                        <span>Science</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Section -->
+    <section id="register" class="registration">
+        <div class="registration-container">
+            <div class="registration-header">
+                <h2 class="section-title gradient-text">Student Registration</h2>
+                <p class="section-subtitle">Join the next generation of learners</p>
+            </div>
+
+            <div class="form-container">
+                <form id="registrationForm" class="registration-form">
+                    <!-- Personal Information -->
+                    <div class="form-section">
+                        <h3 class="form-section-title">
+                            <i class="fas fa-user"></i>
+                            Personal Information
+                        </h3>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="firstName">First Name</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="dateOfBirth">Date of Birth</label>
+                                <input type="date" id="dateOfBirth" name="dateOfBirth" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="gender">Gender</label>
+                                <select id="gender" name="gender" required>
+                                    <option value="">Select Gender</option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Parents Details -->
+                    <div class="form-section">
+                        <h3 class="form-section-title">
+                            <i class="fas fa-user-friends"></i>
+                            Parents Details
+                        </h3>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="fatherName">Father's Name</label>
+                                <input type="text" id="fatherName" name="fatherName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="motherName">Mother's Name</label>
+                                <input type="text" id="motherName" name="motherName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="guardianName">Guardian's Name</label>
+                                <input type="text" id="guardianName" name="guardianName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="parentsContact">Parents' Contact Number</label>
+                                <input type="tel" id="parentsContact" name="parentsContact" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Academic Information -->
+                    <div class="form-section">
+                        <h3 class="form-section-title">
+                            <i class="fas fa-graduation-cap"></i>
+                            Academic Information
+                        </h3>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="program">Program of Study</label>
+                                <select id="program" name="program" required>
+                                    <option value="">Select Program</option>
+                                    <option value="coding-fundamentals">Coding Fundamentals (Class 7-8)</option>
+                                    <option value="web-development">Web Development (Class 9-10)</option>
+                                    <option value="python-programming">Python Programming (Class 9-10)</option>
+                                    <option value="app-development">App Development (Class 11-12)</option>
+                                    <option value="ai-basics">AI Basics (Class 11-12)</option>
+                                    <option value="bachelors-cs">Bachelor's in Computer Science</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="level">Academic Level</label>
+                                <select id="level" name="level" required>
+                                    <option value="">Select Level</option>
+                                    <option value="7">Class 7</option>
+                                    <option value="8">Class 8</option>
+                                    <option value="9">Class 9</option>
+                                    <option value="10">Class 10</option>
+                                    <option value="11">Class 11</option>
+                                    <option value="12">Class 12</option>
+                                    <option value="bachelors">Bachelor's Degree</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="startDate">Preferred Start Date</label>
+                                <input type="date" id="startDate" name="startDate" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="emergencyContact">Emergency Contact</label>
+                                <input type="tel" id="emergencyContact" name="emergencyContact" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Address Information -->
+                    <div class="form-section">
+                        <h3 class="form-section-title">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Address Information
+                        </h3>
+                        <div class="form-grid">
+                            <div class="form-group full-width">
+                                <label for="address">Street Address</label>
+                                <input type="text" id="address" name="address" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="city">City</label>
+                                <input type="text" id="city" name="city" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="state">State/Province</label>
+                                <input type="text" id="state" name="state" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="zipCode">ZIP/Postal Code</label>
+                                <input type="text" id="zipCode" name="zipCode" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="country">Country</label>
+                                <select id="country" name="country" required>
+                                    <option value="">Select Country</option>
+                                    <option value="NP">Nepal</option>
+                                    <option value="CA">India</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Photo Upload -->
+                    <div class="form-section">
+                        <h3 class="form-section-title">
+                            <i class="fas fa-camera"></i>
+                            Student Photo
+                        </h3>
+                        <div class="file-upload" id="fileUpload">
+                            <div class="upload-area" id="uploadArea">
+                                <i class="fas fa-cloud-upload-alt"></i>
+                                <h4>Upload Student Photo</h4>
+                                <p>Drag and drop your photo here, or click to browse</p>
+                                <small>Accepted formats: JPG, PNG, WEBP (Max: 5MB)</small>
+                                <button type="button" class="upload-button" onclick="document.getElementById('photoInput').click()">
+                                    Select Photo
+                                </button>
+                            </div>
+                            <input type="file" id="photoInput" accept="image/*" style="display: none;">
+                            <div class="upload-preview" id="uploadPreview" style="display: none;">
+                                <img id="previewImage" alt="Preview">
+                                <div class="preview-info">
+                                    <span id="fileName"></span>
+                                    <button type="button" class="remove-button" onclick="removePhoto()">
+                                        <i class="fas fa-trash"></i> Remove
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Citizen/Birth Certificate Upload -->
+                    <div class="form-section">
+                        <h3 class="form-section-title">
+                            <i class="fas fa-id-card"></i>
+                            Citizen/Birth Certificate
+                        </h3>
+                        <div class="file-upload" id="certificateUpload">
+                            <div class="upload-area" id="certificateUploadArea">
+                                <i class="fas fa-cloud-upload-alt"></i>
+                                <h4>Upload Certificate</h4>
+                                <p>Drag and drop your certificate here, or click to browse</p>
+                                <small>Accepted: JPG, PNG, PDF (Max: 5MB)</small>
+                                <button type="button" class="upload-button" onclick="document.getElementById('certificateInput').click()">
+                                    Select Certificate
+                                </button>
+                            </div>
+                            <input type="file" id="certificateInput" name="certificate" accept="image/*,application/pdf" style="display: none;" required>
+                            <div class="upload-preview" id="certificatePreview" style="display: none;">
+                                <img id="certificatePreviewImage" style="display:none; width:80px; height:80px; object-fit:cover; border-radius:12px; border:2px solid var(--primary-color);">
+                                <span id="certificateFileName"></span>
+                                <button type="button" class="remove-button" onclick="removeCertificate()">
+                                    <i class="fas fa-trash"></i> Remove
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Additional Information -->
+                    <div class="form-section">
+                        <h3 class="form-section-title">
+                            <i class="fas fa-info-circle"></i>
+                            Additional Information
+                        </h3>
+                        <div class="form-grid">
+                            <div class="form-group full-width">
+                                <label for="education">Previous Education</label>
+                                <textarea id="education" name="education" rows="3" placeholder="Briefly describe your educational background..."></textarea>
+                            </div>
+                            <div class="form-group full-width">
+                                <label for="accommodations">Special Accommodations</label>
+                                <textarea id="accommodations" name="accommodations" rows="3" placeholder="Any special accommodations needed..."></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Terms and Conditions -->
+                    <div class="form-section">
+                        <div class="checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="terms" name="terms" required>
+                                <span class="checkmark"></span>
+                                I agree to the <a href="#" class="link">Terms and Conditions</a> and <a href="#" class="link">Privacy Policy</a>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="communications" name="communications">
+                                <span class="checkmark"></span>
+                                I agree to receive communications about programs and updates
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="form-actions">
+                        <button type="submit" class="submit-button">
+                            <span>Submit Registration</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-container">
+            <h2 class="section-title gradient-text">About TigraCode</h2>
+            <p class="section-subtitle">Pioneering the future of education through innovation and technology</p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Cutting-Edge Technology</h3>
+                    <p>Experience learning with the latest in VR, AI, and quantum computing technologies.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Expert Faculty</h3>
+                    <p>Learn from industry pioneers and thought leaders shaping the future.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Global Network</h3>
+                    <p>Connect with students and professionals from around the world.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+            <img src="assets/TigraCode2.png" alt=""width="50" height="50">
+                <span class="gradient-text">TigraCode</span>
+            </div>
+            <p>&copy; 2025 TigraCode. Shaping the future of education.</p>
+        </div>
+    </footer>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <i class="fas fa-check-circle"></i>
+            <h3>Registration Successful!</h3>
+            <p>Your registration has been submitted successfully. You will receive a confirmation message on WhatsApp shortly.</p>
+            <button onclick="closeModal()" class="modal-button">Continue</button>
+        </div>
+    </div>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>
